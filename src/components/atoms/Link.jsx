@@ -29,7 +29,7 @@ const StyledA = styled.a`
   ${background}
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link).attrs({active: null})`
   cursor: pointer;
 
   ${flexbox}

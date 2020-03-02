@@ -2,14 +2,23 @@ import React from 'react';
 import styled, { ThemeProvider, createGlobalStyle  } from 'styled-components';
 import { connect } from 'react-redux'
 import { Div } from '../atoms';
+import Header from './Header';
+import Footer from './Footer';
 
 const Container = styled(Div)`
   width: 100vw;
-  height: 100vh;
-  overflow-x: none;
-  overflow-y: scroll;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+`;
+
+const Content = styled(Div)`
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  display: flex;
+  margin: 0px auto 0px auto;
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -31,7 +40,11 @@ class Page extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <Container>
-          {this.props.children}
+          <Header />
+          <Content>
+            {this.props.children}
+          </Content>
+          <Footer />
         </Container>
         <GlobalStyle />
       </ThemeProvider>

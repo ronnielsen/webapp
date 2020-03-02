@@ -1,16 +1,29 @@
 import styled from 'styled-components';
 import {
-  space,
-  layout,
-  color,
-  typography
+    color,
+    space,
+    border,
+    typography,
+    layout,
+    shadow,
+    flexbox,
+    grid,
+    position,
+    background
 } from 'styled-system';
 
 export default styled.h1`
-  margin: ${props => props.theme.space.medium}px;
-  font-size: ${props => props.theme.fontSizes.large}px;
-  ${color}
-  ${layout}
+  margin: 0px;
+  padding: 0px;
+  font-size: ${props => props.theme.fontSizes.large};
+  ${flexbox}
   ${space}
+  ${color}
+  ${border}
   ${typography}
+  ${layout}
+  ${shadow}
+  ${grid}
+  ${position}
+  ${background}
 `;
