@@ -2,7 +2,7 @@
   "name": "webapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mattreiss.github.io/webapp",
+  "homepage": "http://ronnielsen.github.io/webapp",
   "dependencies": {
     "apisauce": "^1.0.2",
     "js-logger": "^1.6.0",
@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master -r git@github.com:mattreiss/webapp.git",
+    "deploy": "gh-pages -d build -b master -r git@github.com:ronnielsen/webapp.git",
     "storybook": "start-storybook -p 9001 -c ./src/storybook -s ./assets",
     "build-storybook": "build-storybook -c ./src/storybook -s ./assets",
     "script": "./scripts/script.sh $*",
